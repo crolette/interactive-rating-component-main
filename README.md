@@ -1,3 +1,5 @@
+
+https://github.com/crolette/interactive-rating-component-main/assets/73672696/1d1e1890-3f7a-4d47-b89d-9f3ebd6cff05
 # Frontend Mentor - Interactive rating component solution
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -26,8 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.mp4)
-[Video](https://github.com/crolette/interactive-rating-component-main/blob/00c6bd790c48e3ee8b1b890ce9649d7668aa8480/images/screenshot.mp4)
+
+https://github.com/crolette/interactive-rating-component-main/assets/73672696/51347829-12d1-4ed0-8912-865b200afa30
 
 ### Links
 
