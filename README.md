@@ -27,6 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.mp4)
+[Video](https://github.com/crolette/interactive-rating-component-main/blob/00c6bd790c48e3ee8b1b890ce9649d7668aa8480/images/screenshot.mp4)
 
 ### Links
 
