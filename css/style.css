@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+button,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET CSS */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey-light: hsl(217, 12%, 63%);
+  --grey-medium: hsl(216, 12%, 54%);
+  --blue: hsl(213, 19%, 18%);
+  --blue-dark: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  row-gap: 16px;
+  width: 100vw;
+  height: 100vh;
+  font-size: 15px;
+  background: var(--blue-dark);
+}
+
+/* CARD */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  padding: 40px;
+  border-radius: 16px;
+  gap: 24px;
+  line-height: 1.5em;
+  color: var(--grey-medium);
+  background: linear-gradient(
+    200deg,
+    rgba(37, 45, 55, 1) 25%,
+    rgba(18, 20, 23, 1) 100%
+  );
+
+  &.invisible {
+    display: none;
+  }
+
+  h2 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.9em;
+  }
+
+  .card__icon {
+    width: 32px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--blue);
+  }
+
+  &.card__thanks {
+    text-align: center;
+
+    img {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .card__note {
+      color: var(--orange);
+      background: var(--blue);
+      padding: 12px;
+      border-radius: 18px;
+    }
+  }
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+  & button {
+    background: red;
+    cursor: pointer;
+    background: var(--orange);
+    color: var(--white);
+    padding: 8px 0;
+    border-radius: 32px;
+
+    &:hover {
+      background: var(--white);
+      color: var(--orange);
+    }
+  }
+}
+
+.card__notation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.card__number {
+  display: flex;
+  align-items: center;
+
+  &:has(> input:checked),
+  &:has(> input:hover) {
+    color: var(--white);
+  }
+
+  label {
+    cursor: pointer;
+    z-index: 1;
+    width: 40px;
+    text-align: center;
+  }
+
+  input {
+    cursor: pointer;
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--blue);
+
+    &:hover {
+      background-color: var(--grey-light);
+    }
+
+    &:checked {
+      background-color: var(--orange);
+    }
+  }
+}
+
+/* FOOTER LOGO CROLWEB */
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer__logo {
+  img {
+    width: 50px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
